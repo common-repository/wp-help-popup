@@ -1,0 +1,294 @@
+#fc-modal-btn{
+    background: #ee7738;
+    color: #fff !important;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+
+/*---------------------------
+Modal
+-----------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700');
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%) ;
+  -ms-transform: translate(0, -25%) ;
+  -o-transform: translate(0, -25%) ;
+  transform: translate(0, -25%) ;
+  -webkit-transition: -webkit-transform 0.3s ease-out ;
+  -o-transition: -o-transform 0.3s ease-out ;
+  transition: transform 0.3s ease-out ;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0) ;
+  -ms-transform: translate(0, 0) ;
+  -o-transform: translate(0, 0) ;
+  transform: translate(0, 0) ;
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative ;
+  width: auto ;
+}
+ .modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  outline: 0;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.modal-form textarea{
+  height:178px;
+}
+.modal-form input::-webkit-input-placeholder, 
+.modal-form input::-moz-placeholder,
+.modal-form input:-ms-input-placeholder,
+.modal-form input:-moz-placeholder,
+.modal-form textarea::-webkit-input-placeholder, 
+.modal-form textarea::-moz-placeholder,
+.modal-form textarea:-ms-input-placeholder,
+.modal-form textarea:-moz-placeholder {
+  color: #919191;
+}
+.sep-footer{
+  background:#ee7738;
+  padding:15px 45px;
+}
+.sep-footer .fc-left{
+  float:left;
+}
+.sep-footer .fc-right{
+  float:right !important;
+}
+.modal-time ul{
+  padding:0px;
+  margin:0px;
+}
+.modal-time li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 12px 15px;
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+.appointa_popup .modal-lg {
+    width: 850px !important;
+  }
+}
+@media (max-width: 767px) {
+  .modal-header .close {
+    right:0px;
+  }
+  .modal-header{
+    padding:20px;
+  }
+  .modal-body{
+    padding:20px 20px 10px
+  }
+  .modal-footer,.sep-footer {
+    padding: 15px 20px;
+  }
+  .datetime span{
+    font-size:24px;
+  }
+  .datetime span font{
+    font-size:18px;
+  }
+}
+.clearfix:before,
+.clearfix:after,
+.modal-header:before,
+.modal-header:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after,
+.modal-header:after,
+.modal-footer:after {
+  clear: both;
+}
+
+/*---------------------------
+Calender
+-----------------------------*/
+
+/**Skin-1 CSS***/
+
+.fc-clear::after,
+.fc-clear::before,
+.fc-divider::after,
+.fc-divider::before,
+.fc-container::after,
+.fc-container::before {
+    display: table;
+    content: " ";
+}
+
+.fc-clear {
+    clear: both;
+    position: relative;
+}
+/** Custom Css Statrt From here**/
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+    margin-top: -2px;
+}
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  .modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+            transition: opacity 0.3s linear, right 0.3s ease-out;
+  }
+  
+  .modal.right.fade.in .modal-dialog {
+    right: 0;
+  }
+/** Modal Custom Css start **/
+#myModal .modal-title{
+    width: 95%;
+    float: left;
+}
+
+#myModal.modal {
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: inherit;
+    right: 0;
+    bottom: 0;
+    left: inherit;
+    z-index: 9999999;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
